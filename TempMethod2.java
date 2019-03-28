@@ -1,6 +1,3 @@
-
-package tempmethod2;
-
 public class TempMethod2 {
     
     //definicja metody isPositive wraz z argumentem Temp typu int
