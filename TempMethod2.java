@@ -12,7 +12,7 @@ public class TempMethod2 {
         else if (Temp < 0)
 
         {
-            System.out.println("Twoja temperatura to: " + Temp + "." + " " + "Temperatura jest ujemna.");
+            System.out.println("Twoja temperatura to: " + Temp + "." + " " + "Temperatura jest ujemna, więc ubierz się ciepło.");
         }
         
         else 
