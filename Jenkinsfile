@@ -1,17 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage("Compile") {
+    stage("Checkout") {
       steps {
-        echo "Compiling..."
-        sh "./gradlew compileJava"
+        echo "Checking out..."
+        git url: "https://https://github.com/lfarul/TempMethod2.git"
       }
     }
-  stage ("Unit Test") {
-    steps {
-      echo "Unit testing..."
-      sh "./gradlew test"
-    }
-  }
   }
 }
