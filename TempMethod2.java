@@ -23,8 +23,8 @@ public class TempMethod2 {
     }
 
     public static void main(String[] args) {
-        // wywoluje metode isPositive nadajac argumentowi Temp wartosc 10 
-        isPositive(10);
+        // wywoluje metode isPositive nadajac argumentowi Temp wartosc 20 
+        isPositive(20);
         
     }
     
