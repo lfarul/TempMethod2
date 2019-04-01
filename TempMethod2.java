@@ -6,7 +6,7 @@ public class TempMethod2 {
         if (Temp > 0)
         
         {
-            System.out.println("Twoja temperatura to: " +  Temp + "." + " " + "Temperatura jest dodatnia."); 
+            System.out.println("Twoja temperatura to: " +  Temp + "." + " " + "Temperatura jest dodatnia.Więc mozesz ubrać szorty."); 
         }
         
         else if (Temp < 0)
