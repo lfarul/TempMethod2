@@ -17,7 +17,7 @@ public class TempMethod2 {
         
         else 
         {
-            System.out.println("Twoja temperatura to: " + Temp + "." + " " + "Temperatura wynosi 0.");
+            System.out.println("Twoja temperatura to: " + Temp + "." + " " + "Temperatura wynosi 0, więc nie jest źle.");
         }
         
     }
