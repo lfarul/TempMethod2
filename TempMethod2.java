@@ -24,7 +24,7 @@ public class TempMethod2 {
 
     public static void main(String[] args) {
         // wywoluje metode isPositive nadajac argumentowi Temp wartosc 20 
-        isPosit(20);
+        isPosi(20);
         
     }
     
