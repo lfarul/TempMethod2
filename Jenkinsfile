@@ -14,7 +14,7 @@ pipeline {
     }
     stage("Build"){
       steps{
-        sh 'java TempMethod'
+        sh 'java TempMethod2'
         echo "Building..."
       }
     }
