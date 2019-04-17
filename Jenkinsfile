@@ -1,9 +1,4 @@
 pipeline {
-  environment {
-    registry = 'lfarul/docker-test'
-    registryCredenrial = 'dockerhub'
-    dockerImage = ''
-  }
   agent any
   stages {
     stage("Compile") {
@@ -23,15 +18,7 @@ pipeline {
         echo "Building..."
       }
     }
-    stage ("Deploy image"){
-      steps{
-        script{
-          docker.withRegistry ('', registryCredential){
-            dockerImage.push
-          }
-        }
-      }
-    }
   }
 }
+
          
