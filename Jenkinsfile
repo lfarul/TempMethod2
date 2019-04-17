@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage("Compile") {
       steps {
+         steps {
+          sh 'javac TempMethod2'
         echo "Compiling..."
   }
 }
