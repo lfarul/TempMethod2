@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("Compile") {
       steps {
-          sh 'javac TempMethod2.java'
+        sh 'javac TempMethod2.java'
         echo "Compiling..."
   }
 }
@@ -14,6 +14,7 @@ pipeline {
     }
     stage("Build"){
       steps{
+        sh 'java TempMethod'
         echo "Building..."
       }
     }
