@@ -12,10 +12,10 @@ pipeline {
         echo "Testing..."
       }
     }
-    stage("Build"){
+    stage("Build Docker image"){
       steps{
-        sh 'java TempMethod2'
-        echo "Building..."
+        sh 'docker build -t lfarul/TempMethod2:5.0.0 .'
+        echo "Building Docker image..."
       }
     }
   }
