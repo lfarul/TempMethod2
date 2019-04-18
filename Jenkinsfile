@@ -14,7 +14,7 @@ pipeline {
     }
     stage("Build Docker image"){
       steps{
-        sh 'docker build -t lfarul/tempmethod2:5.0.0 .'
+        sh 'docker build -t lfarul/tempmethod2:6.0.0 .'
         echo "Building Docker image..."
       }
     }
