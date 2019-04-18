@@ -26,7 +26,7 @@ public class TempMethod2 {
         // wywoluje metode isPositive nadajac argumentowi Temp wartosc 20 
         isPositive(20);
         
-        System.out.println("Ten komentarz zawsze się wyświetli");
+        System.out.println("Ten komentarz zawsze się wyświetli, więc no worries.");
         
     }
     
