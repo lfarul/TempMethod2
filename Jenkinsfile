@@ -25,6 +25,8 @@ pipeline {
         }
         sh 'docker push lfarul/tempmethod2:5.0.0'
         echo "Pushing Docker image..."
+      }
+    }
   }
 }
 
