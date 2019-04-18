@@ -21,9 +21,9 @@ pipeline {
     stage("Push Docker image"){
       steps{
         withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubpwd')]) {
-          sh 'docker login -u lfarul -p $dockerHubpw'
+          sh "docker login -u lfarul -p ${dockerHubpw}"
         }
-        sh 'docker push lfarul/tempmethod2:5.0.0'
+        sh 'docker push lfarul/tempmethod2:6.0.0'
         echo "Pushing Docker image..."
       }
     }
