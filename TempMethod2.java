@@ -1,6 +1,13 @@
 public class TempMethod2 {
     
     //definicja metody isPositive wraz z argumentem Temp typu int
+    
+    public void dockerPush (){
+        
+        System.out.println("Wygląda na to, że udało się przepchnąć obraz na chmurę Dockera :)");
+        
+    }
+    
     static void isPositive(int Temp) {
         
         if (Temp > 0)
@@ -27,6 +34,8 @@ public class TempMethod2 {
         isPositive(20);
         
         System.out.println("Ten komentarz zawsze się wyświetli, więc no worries..");
+        
+        dockerPush();
         
     }
     
