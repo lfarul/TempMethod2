@@ -1,10 +1,12 @@
 pipeline {
   agent any
   stages {
+    // Kompiluje plik
     stage("Compile") {
       steps {
+        echo "Compiling the file"
         sh 'javac TempMethod2.java'
-        echo "Compiling..."
+        
   }
 }
     stage("Test") {
@@ -12,10 +14,12 @@ pipeline {
         echo "Testing..."
       }
     }
+    // Buduje obraz Dockera
     stage("Build Docker image"){
       steps{
-        sh 'docker build -t lfarul/tempmethod2:6.0.0 .'
         echo "Building Docker image..."
+        // lfarul to mój username na dockerhub i musi być w nazwie image / nazwa obrazu : wersja obrazu
+        sh 'docker build -t lfarul/TM2:1.0 .'
       }
     }
     stage("Push Docker image"){
@@ -23,7 +27,7 @@ pipeline {
         withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubpwd')]) {
           sh "docker login -u lfarul -p ${dockerHubpwd}"
         }
-        sh 'docker push lfarul/tempmethod2:6.0.0'
+        sh 'docker push lfarul/TM2:1.0'
         echo "Pushing Docker image..."
       }
     }
