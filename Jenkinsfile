@@ -20,7 +20,7 @@ pipeline {
         echo "Building Docker image..."
         // lfarul to mój username na dockerhub i musi być w nazwie image / nazwa obrazu : wersja obrazu
         sh 'docker build -t lfarul/tm2:2.0 .'
-        sh 'docker build -t gcr.io/tm2:2.0 .'
+        sh 'docker build -t gcr.io/refreshing-rune-238714/tm2:2.0 .'
       }
     }
     // Robie push obrazu Dockera na chmure Dockera
