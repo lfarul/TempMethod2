@@ -12,7 +12,7 @@ pipeline {
     stage("JUnit Test") {
       steps {
         echo "Testing the file..."
-        sh 'javac TempMethod2Test.java'
+        sh 'javac -cp junit-4.12.jar TempMethod2Test.java'
       }
     }
     // Buduje obraz Dockera dla Docker Registery 
