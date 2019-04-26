@@ -1,12 +1,14 @@
 public class TempMethod2 {
     
+    void testmethod(){
+        System.out.println("Skoro widzisz ten napis to znaczy, że testy się powiodły.");
+    }
+    
     void dockerBuildImage(){
-        
         System.out.println("Jenkinsfile buduje obrazy dla Docker Hub oraz Google Cloud");
     }
     
     void dockerHubPush (){  
-
         System.out.println("Wygląda na to, że Jenkinsowi udało się przepchnąć obraz na chmurę Dockera :)");
     }
     
