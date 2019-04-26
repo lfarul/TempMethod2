@@ -8,8 +8,6 @@ public class TempMethod2Test {
         
         TempMethod2 c = new TempMethod2();
         
-        c.dockerBuildImage();
-        c.dockerHubPush();
-        c.isPositive(25);   
+        c.testMethod();   
     }
 }
