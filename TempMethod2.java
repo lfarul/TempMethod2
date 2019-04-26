@@ -1,6 +1,6 @@
 public class TempMethod2 {
     
-    void testmethod(){
+    void testMethod(){
         System.out.println("Skoro widzisz ten napis to znaczy, że testy się powiodły.");
     }
     
